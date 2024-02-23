@@ -20,6 +20,11 @@ const parseCode = (str) => {
   };
 };
 
+// Example usage:
+console.log(parseCode("John000Doe000123")); // { firstName: "John", lastName: "Doe", id: "123" }
+console.log(parseCode("michael0smith004331")); // { firstName: "michael", lastName: "smith", id: "4331" }
+console.log(parseCode("Thomas00LEE0000043")); // { firstName: "Thomas", lastName: "LEE", id: "43" }
+
 // Do not change the code below
 const str = prompt("Enter str: ");
 alert(JSON.stringify(parseCode(str)));
